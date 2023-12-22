@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>popup</title>
+    <link rel="stylesheet" href="popup.css">
+</head>
+<body >
+    <h1 id="heading">Lets make a popup using javascript.</h1>
+
+    <div id="popup">
+    <h2>Hey I am Here.</h2>
+    <p>The popup has started  after 10sec.</p>
+    </div>
+
+
+<script>
+    window.onload = function() {
+    setTimeout(function() {
+        document.getElementById("popup").style.display = 'block';
+    }, 5000);
+    setTimeout(function() {
+        document.getElementById("popup").style.display = 'none';
+    }, 10000);
+}
+</script>    
+</body>
+</html>

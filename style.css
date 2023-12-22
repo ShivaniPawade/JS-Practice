@@ -1,0 +1,42 @@
+body{
+    text-align: center;
+    color: #fff;
+    font-family: serif;
+    background-color: rgb(60, 63, 63);
+}
+button{
+    padding: 0.5rem;
+    border-radius: 10px;
+    background-color: transparent;
+    box-shadow: 0px 0px 5px white;
+    font-size: medium;
+    color: #fff;
+    margin-right: 1rem;
+}
+#demo{
+    font-weight: 500;
+    font-size: 1.5rem;
+}
+
+
+/* ------------------------------------ */
+
+.background{
+    margin: 0 20vw;
+    background-color: rgb(195, 0, 255);
+    height: 20vh;
+}
+h2{
+    padding-top: 3rem;
+}
+
+#fontsize{
+    margin-top: 3rem;
+}
+
+.selectbtn{
+    padding: 0.5rem;
+    font-size: 1rem;
+    margin-left: 1rem;
+    border-radius: 10px;
+}

@@ -1,50 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script src="index.js"></script>
-    <script src="variables.js"></script>
-    <script src="conditionalStatement.js"></script>
-    <script src="function.js"></script>
-    <script src="string.js"></script>
-    <script src="Array.js"></script>
-    <script src="object.js"></script>
-    <script src="Filter_Map_Reduce.js"></script>
-
-    <title>Document</title>
-  </head>
-  <body>
-    Hello All
-    <p id="demo"></p>
-
-    <h2>bulb on/off</h2>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>codePractice</title>
+    <link rel="stylesheet" href="../codePractice/style.css">
+    <script src="../codePractice/dom.js" defer></script>
+</head>
+<body>
     
-    <br />
-    <button class="onoff" onclick="document.getElementById('blubImage').src='./codePractice/images/pic_bulbon.gif'" >on</button>
-    <img
-      id="blubImage"
-      src="./codePractice/images/pic_bulboff.gif"
-      width="10%"
-      height="10%"
-      alt="bulb"
-    />
-    <button class="onoff" onclick="document.getElementById('blubImage').src='./codePractice/images/pic_bulboff.gif'" >off</button>
-    <!-- <p id="hello">heeello all.</p> -->
-    <script>
-      //  let x= document.getElementById("demo").innerHTML = "just getting the idea about the methods and element of html.";
-
-      //  const array = [1, 2, 3, 4, 5];
-      //  const array1 = ["a", "b", "c"];
-      //  const array2 = [{ a: "apple", b: "ball" }];
-
-      //  document.getElementById("demo").innerHTML = array1.join("-");
-      //  console.log(array);
-
-      //  document.getElementById("hello").innerHTML=x;
-      //   document.getElementById("hello").innerHTML="this is want i want from you." ;
+    <h1>practice on dom manipulation.</h1>
+    <p id="demo" >this is to check.</p>
+    <button type="button" onclick="document.getElementById('demo').innerHTML='the tex is changed through innerthml.'">pop me !</button>
+    <button type="button" onclick="document.getElementById('demo').style.color='red'">color change !</button>
 
 
-    </script>
-  </body>
+    <!-- -----------------   to study the style element on the element  ---------------- -->
+
+     <div class="background">
+        <h2 id="change">style element.</h2>
+        <h3 id="changeit"> kaisan ho aap log sab thik ba.</h3>
+     </div>
+
+    <select id="fontcolor" onchange="fontColor()" class="selectbtn">
+      <option value="black">black</option>
+      <option value="pink">pink</option>
+      <option value="yellow">yellow</option>
+      <option value="coral">coral</option>
+      <option value="green">green</option>
+    </select>
+
+    <select id="fontsize" onchange="fontSize()" class="selectbtn ">
+        <option value="x-small">x-small</option>
+        <option value="xx-small">xx-small</option>
+        <option value="x-large">x-large</option>
+        <option value="xx-large">xx-large</option>
+        <option value="large">large</option>
+        <option value="medium">medium</option>
+        <option value="0.5em">0.5em</option>
+    </select>
+
+    <select  id="backroundcolor" onchange="backgroundColor()" class="selectbtn " >
+        <option value="black">Black</option> 
+        <option value="crimson">Red</option> 
+        <option value="green">Green</option> 
+        <option value="#0984e3">Blue</option> 
+        <option value="cyan">Cyan</option> 
+        <option value="#00b894">Mint Leaf</option> 
+        <option value="#e84393">Pink</option>
+    </select>
+
+    <select  id="border" onchange="Border()" class="selectbtn">
+        <option value="10px">10px</option>
+        <option value="20px">20px</option>
+        <option value="30px">30px</option>
+        <option value="40px">40px</option>
+        <option value="50px">50px</option>
+    </select>
+
+</body>
 </html>

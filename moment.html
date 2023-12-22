@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>moment</title>
+     
+</head>
+<body style="text-align: center;">
+    <h1> Basic idea about moment in JS.</h1>
+    <h2></h2>
+    <h3 id="heading"></h3>
+
+<script src="https://momentjs.com/downloads/moment.min.js" ></script>   
+<script>
+    let result=moment();   // --- this is a normal format .
+    result=moment().format('DD-MM-YYYY  :  HH/MM/SS');
+    result=moment().format('LTS');   //  -- lts is local time in seconds
+    result=moment().format('LLL');
+    document.querySelector("h2").innerHTML=result;
+    // result=moment().add(1,"Y").format('L');         // ---  it add data to the current value 
+    // result=moment().substract(1,"M").format('L');
+    // let today=moment();
+    // let x=moment('2020-12-1'); // -- custom date.
+    // let diff = x.diff(today,'year')
+    // document.querySelector("h2").innerHTML=diff;
+
+    let result1 = moment('2023-1-12').subtract(10,'months').format('DD-MM-YYYY');
+    document.getElementById("heading").innerHTML = result1;
+
+</script>
+
+</body>
+</html>
